@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #F8F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.header{
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 10px gray;
+}
+.balance{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  background-color: #fff;
+  padding: 2px;
+  box-shadow: 0 0 5px gray;
+}
+.money-plus, .money-minus{
+  font-weight: bold;
+  color: green;
+
+}
+.money-minus{
+  color: red !important;
+}
+/* Balance */
+.total-balance{
+  padding: 4px;
+  letter-spacing: .1rem;
+  box-shadow: 0 0 2px gray;
+  margin-top: 1rem;
+}
+.total-balance h3{
+  color: green;
+}
+/*  */
+/* Transaction */
+.transaction{
+  margin-top: 1rem;
+}
+.transaction h3{
+  letter-spacing: .1rem;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  background-color: #fff;
+  padding: .8rem;
+  box-shadow: 0 0 10px gray;
+}
+.list-plus{
+  border-right: .3rem solid green;
+}
+.list-minus{
+  border-right: .3rem solid red;
+}
+li .delete-btn{
+  background-color: red;
+  position: absolute;
+  /* right: 15px; */
+  left: 500px;
+  border: none;
+  outline: none;
+  padding: .3rem;
+  opacity: 0;
+  color: #fff;
+}
+li:hover .delete-btn{
+  opacity: 1;
+}
+
+/*  */
+/* Add Transaction */
+.add-transaction{
+  margin-top: 1rem;
+  line-height: 1rem;
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+}
+.form-control > input{
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px gray;
+}
+.btn{
+  width: 100%;
+  padding: .4rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: blue;
+  margin-top: .3rem;
+}
+
+
